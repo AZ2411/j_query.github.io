@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" , initial-scale=1.0>
+    <title>JQ TAB EXAMPLE</title>
+    <style>
+        .atc{
+            border-radius: 20px;
+        }
+        h2{
+            text-align: center;
+            margin: 0px auto 50px;
+        }
+        /*shop page*/
+        .beer img {
+    width: 200px;
+    height: 200px;
+    border: solid 5px #8e97e8;
+    border-radius: 20px
+;
+}
+        .item {
+    width: 800 px;
+    display: -webkit-inline-box;
+}
+        
+            .li_hover li {
+    display: inline;
+    margin: 20px;
+                border: solid 1px white;
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                border-radius: 20px;
+                cursor: pointer;
+}
+        .li_hover{
+            list-style: none;
+            
+        }
+        .beer.notpro {
+    display: none;
+}
+.beer {
+    width: 290px;
+    display: inline-block;
+    margin: 30px 100px 20px 100px;
+}
+.item {
+    width: 700
+px
+;
+    display: inline-block;
+}
+        /* start content */
+        .main_contact {
+        
+           min-height: 675px;
+           width: 100%;
+           display: flex;
+           overflow: hidden;
+           justify-content: center;
+           align-items: center;
+           
+       }
+       .mainform {
+          background-image: url(images/contact_color.jpg);
+           width: 100%;
+           max-width: 700px;
+           height: 478px;
+           box-shadow:  0 0 20px 2px rgb(00, 00, 0.1) ;
+           border-radius: 15px;
+           overflow: hidden;
+           
+           
+
+       }
+       
+          .fdiv1_contact {
+              justify-content: center;
+              text-align: center;
+              position: relative;
+              top: 5px;
+              color: gold;
+              
+              
+          }
+          .fdiv1_email {
+              margin-bottom: 15px;
+             
+          }
+      /*formtwo*/
+.form-divtwo {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px;
+    top: 15px;
+}
+        .inputdiv {
+            position: relative;
+           justify-content: center;
+           text-align: center;
+           margin: 20px 50px;
+              }
+              .input {
+                  width: 100%;
+                  outline: none;
+                  border: 2px solid #fafafa;
+                  background: none;
+                  padding: 5px;
+                  color: #fff;
+                  font-weight: 500;
+                  font-size: 0.95rem;
+                  letter-spacing: 0.5px;
+                  border-radius: 30px;
+              }
+       
+       .inputdiv_text {
+       position: relative;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 50px;
+        
+       }
+       .inputdiv_text textarea {
+        width: 100%;
+        outline: none;
+        border: 2px solid #fafafa;
+        background: none;
+        padding: 5px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        border-radius: 20px;
+           
+       }
+      
+      
+    .buttom {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 50px;
+    }
+.inputdiv label {
+    background: none;
+    position: absolute;
+    margin: 0px 0px 0px 20px;
+    bottom: 26px;
+    font-family: 'Rampart One', cursive;
+}
+.inputdiv_text label{
+    background: none;
+    position: absolute;
+bottom: 103px;
+left: 25px;
+font-family: 'Rampart One', cursive;
+    
+}
+.inputbuttom {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid#fafafa;
+    color: rgb(0, 0, 0);
+    background: none;
+}
+.contacttext {
+    text-align: center;
+    justify-content: center;
+    
+}
+.contacttext h2 {
+    font-family: 'Rampart One', cursive;
+}
+.social {
+    justify-items: center;
+    text-align: center;
+}
+.social ul li {
+    display: inline-block;
+    color: black;
+    margin: 10px;
+}
+.fdiv1_phone i {
+    display: inline-block;
+}
+.fdiv1_phone h3 {
+    display: inline-block;
+}
+.fdiv1_email h3{
+display: inline-block;
+}
+/* end content */
+        body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+p.show_qty {
+    
+    margin: 0;
+    width: 20px;
+    display: inline-block;
+    font-size: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+        
+        ul.link_wap {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;}
+    ul.link_wap li {
+    display: inline-block;
+    padding: 24px;
+    padding-top: 1px;
+    text-align: center;
+   
+}
+ul.link_wap li a.active{
+color: rgba(255, 217, 0, 0.747);
+border-bottom: 2px solid gold;
+
+}
+ul.link_wap li a{
+    text-decoration: none;
+}
+div.content {
+    max-width: 1600px;
+    text-align: center;
+    align-items: center;
+    background-color: #0418cd73;
+    
+    margin: 0 auto 10px;
+    display: none;
+    padding-bottom: 80px;
+}
+ul.link_wap li a {
+    color: black;
+}
+
+    </style>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(event){
+            $('.content').first().slideDown();
+
+            $('ul.link_wap li a').on("click",function(event){
+                var current_tab = $(this);
+                $('ul.link_wap li a').removeClass('active');
+                current_tab.addClass('active');
+
+                $('.content').slideUp();
+                current_tab_href = current_tab.attr('href');
+                $(current_tab_href).slideDown();
+                event.preventDefault();
+            })
+            $('.atc').on("click",function(){
+                let id = $(this).data('id')
+                let name = $(this).data('name')
+                let price = $(this).data('price')
+                let item = {
+                    id: id,
+                    name: name,
+                    price: price,
+                    qty: 1
+                }
+                    //console.log(item)
+                let cart = localStorage.getItem('cart')
+                let myArr ='';
+
+                if(cart != null){
+                    myArr = JSON.parse(cart);
+
+                }else{
+                    myArr=[]
+                }
+                let sataus = 0
+                for(object_id of myArr){
+                    if(object_id.id == id){
+                        object_id.qty++;
+                        status = 1;
+                    }
+                }
+                if (status == 0){
+                    myArr.push(item)
+                }
+                //Js obj => json string
+                let myArrString = JSON.stringify(myArr);
+                // console.log(myArrString)
+                localStorage.setItem('cart',myArrString)
+                getdata()
+            })
+
+            //get data from ls
+            function getdata() {
+                let cart = localStorage.getItem('cart');
+                if(cart != null){
+                    let myArr = JSON.parse(cart)
+                let row = ''
+                let total = 0;
+                let i = 0;
+                for([index,item] of myArr.entries()){
+                    total += item.qty*item.price
+                    row += `
+                    <tr>
+                        <td>
+                                <button class="remove" data-id="${index}">Remove</button> 
+                                ${++i}
+                            </td> 
+                       <td>${item.name}</td>
+                        <td>${item.price}</td>
+                        <td><input type="number" min="1" value="${item.qty}" class = "updateqty" data-id="${index}"></td>
+                        <td>${item.qty*item.price}Ks</td>
+                        </tr>`
+                }
+                row += `<tr>
+                    <td colspan="4">Total Amount</td>
+                    <td>${total}</td>
+                        </tr>`
+                $('tbody').html(row)
+                }
+                else{
+                    $('tbody').html(`<tr><td colspan="5">Your Cart is empty!</td></tr>`);
+                }
+               
+                show_qty();
+
+            }
+            getdata();
+
+            //Show_Qty
+            function show_qty(){
+                let cart = localStorage.getItem('cart')
+                let for_qty = JSON.parse(cart)
+                let number_of_qty = 0;
+                if(for_qty != null){
+                    for(item of for_qty){
+                    //console.log(item.qty);
+                    number_of_qty += parseInt(item.qty);
+                    
+                }
+                }
+                else{
+                    number_of_qty = 0;
+                }
+                
+                $('.show_qty').html(number_of_qty)
+                //console.log(number_of_qty)
+            }
+
+            //Remove
+
+            $('tbody').on("click",".remove",function () {
+                let index =$(this).data('id')
+                //console.log(index)
+                let cart = localStorage.getItem('cart');
+                let myArr = JSON.parse(cart);
+                myArr.splice(index,1)
+                let myArrstring = JSON.stringify(myArr);
+                //console.log(myArrstring)
+                localStorage.setItem('cart',myArrstring)
+                getdata()
+
+
+            })
+            // increase and decrease qty
+        $('tbody').on("change",".updateqty",function () { 
+            let index = $(this).data('id');
+            // console.log(index)
+            let qty = $(this).val();
+            let cart = localStorage.getItem('cart');
+            let myArr = JSON.parse(cart);
+            myArr[index].qty = qty
+            // JS Object => JSON String
+            let myArrString = JSON.stringify(myArr);
+            // console.log(myArrString)
+            localStorage.setItem('cart',myArrString);
+            getdata();
+            
+            
+        })
+
+        // checkout
+        $('.check_out').on("click",function () { 
+            localStorage.removeItem('cart')
+            getdata();
+        })
+        $(".atc").on("click",function(){    
+            Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+        })
+        $(".check_out").on("click",function(){
+            Swal.fire(
+  'Complete! ',
+  'Thank You',
+  'You clicked the button!',
+  'success'
+)
+        })
+        })
+        
+
+    </script>
+</head>
+<body>
+  <div class="tab">
+      
+<ul class="link_wap">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#cart">Cart</a><p class="show_qty"></p></li>
+
+</ul>
+  </div>  
+  <div class="content" id="home">
+      <h2>Home Section</h2>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Explicabo aliquid, consequuntur neque, corporis minima 
+          asperiores excepturi laborum nesciunt animi quibusdam veniam! 
+          Laudantium ea sapiente harum neque, similique animi eveniet ducimus!
+      </p>
+
+  </div>
+  <div class="content" id="about">
+    <h2>About Section</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Explicabo aliquid, consequuntur neque, corporis minima 
+        asperiores excepturi laborum nesciunt animi quibusdam veniam! 
+        Laudantium ea sapiente harum neque, similique animi eveniet ducimus!
+    </p>
+
+</div>
+<div class="content" id="contact">
+    
+    <div class="main_contact">
+        <div class="mainform">
+            
+                  <div class="form-divtwo">
+          <div class="contacttext"> <h2>Contact us</h2> </div>
+          <div class="inputdiv"> <label for="name">Name</label>
+            <input type="text" id="name" class="input"></div>
+          <div class="inputdiv"> <label for="email">Email</label>
+            <input type="email" id="email" class="input"></div>
+          <div class="inputdiv">  <label for="phnum">Phone</label>
+            <input type="text" id="phnum" class="input"></div>
+          <div class="inputdiv_text">  <label for="textarea">Message</label>
+           <textarea name="text" id="textarea" cols="30" rows="5"></textarea></div>
+         <div class="buttom"><input type="submit" value="Sent" class="inputbuttom"></div>
+         <div class="social"><ul>
+             <li><i class="fab fa-twitter-square fa-lg"></i></li>
+             <li><i class="fab fa-facebook-square fa-lg"></i></li>
+         </ul>
+        </div>
+         
+        
+        
+       
+        <div class="fdiv1_aderss"> 
+             <p></p>
+            </div></div>
+                  
+              
+             
+          
+          </div>
+        </div>
+
+</div>
+<div class="content" id="shop">
+    <h2 id="shop_Section">Here Our Menu</h2>
+    <div class="shop">
+        <ul class="li_hover">
+         
+            <li class="all " data-first="beer">Beer</li>
+            <li class="all pro" data-first="wine" >Wine</li>
+            <li class="all " data-first="cocktail" id="big1">Cocktail</li>
+            
+        </ul>
+        <div class="item">
+            <div class="beer notpro" data-second="beer"><img src="shop images/beer/1beer.jpg" alt=""  > <br> 
+                
+                <p class="price">3000MMk</p>
+
+                <button class="atc" data-id="1" data-name="Beer" data-price="3000">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer" data-second="wine"><img src="shop images/wine/wine1.jpg" alt="" > <p class="price">2500MMk</p>
+                <button class="atc" data-id="2" data-name="Wine" data-price="2500">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="cocktail"><img src="shop images/cocktail/coc1.jpg" alt="" ><p class="price">4000MMk</p>
+                <button class="atc" data-id="3" data-name="CockTail" data-price="4000">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="beer"><img src="shop images/beer/2beer.jpg" alt=" " ><p class="price">3500MMk</p>
+                <button class="atc" data-id="4" data-name="Beer" data-price="3500">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer" data-second="wine"><img src="shop images/wine/wine2.jpg" alt="" ><p class="price">2000MMk</p>
+                <button class="atc" data-id="5" data-name="Wine" data-price="2000">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="cocktail"><img src="shop images/cocktail/coc2.jpg" alt="" ><p class="price">4500MMk</p>
+                <button class="atc" data-id="6" data-name="CockTail" data-price="4500">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="beer"><img src="shop images/beer/3beer.jpg" alt="" ><p class="price">2000MMk</p>
+                <button class="atc" data-id="7" data-name="Beer" data-price="2000">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer" data-second="wine"><img src="shop images/wine/wine3.jpg" alt=""><p class="price">2500MMk</p>
+                <button class="atc" data-id="8" data-name="Wine" data-price="2500">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="cocktail"><img src="shop images/cocktail/coc3.jpg" alt="" ><p class="price">3700MMk</p>
+                <button class="atc" data-id="9" data-name="CockTail" data-price="3700">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="beer"><img src="shop images/beer/4beer.jpg" alt="" ><p class="price">2000mmk</p>
+                <button class="atc" data-id="10" data-name="Beer" data-price="2000">Add to Cart</button></div>
+            
+        </div>
+        <div class="item">
+            <div class="beer" data-second="wine"><img src="shop images/wine/wine4.jpg" alt="" ><p class="price">3500mmk</p>
+                <button class="atc" data-id="11" data-name="Wine" data-price="3500">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="cocktail"><img src="shop images/cocktail/coc4.jpg" alt="" ><p class="price">4700mmk</p>
+                <button class="atc" data-id="12" data-name="CockTail" data-price="4700">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="beer"><img src="shop images/beer/5beer.jpg" alt="" ><p class="price">1400mmk</p>
+                <button class="atc" data-id="13" data-name="Beer" data-price="1400">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer" data-second="wine"><img src="shop images/wine/wine5.jpg" alt=""><p class="price">2900mmk</p>
+                <button class="atc" data-id="14" data-name="Wine" data-price="2900">Add to Cart</button>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="beer notpro" data-second="cocktail"><img src="shop images/cocktail/coc5.jpg" alt="" ><p class="price">3600mmk</p>
+                <button class="atc" data-id="15" data-name="CockTail" data-price="3600">Add to Cart</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+<div class="content" id="cart">
+    <h2>Cart Section</h2>
+    <div class="mycart">
+        <table border="1" cellspacing="0" cellpadding="10" width="100%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+    
+        <button class="check_out">Check Out</button>
+    </div>
+    
+</div>
+
+
+<script >
+    let all =document.querySelectorAll('.all');
+    let beer =document.querySelectorAll('.beer')
+    
+
+    for(i = 0; i < all.length; i++){
+        console.log(all);
+        all[i].addEventListener('click' , function(){
+            for(g = 0; g <  all.length; g++){
+                all[g].classList.remove('pro')
+            }
+            this.classList.add('pro')
+            let datafirst = this.getAttribute('data-first');
+            for (m=0; m<beer.length; m++) {
+                beer[m].classList.remove('pro')
+                    beer[m].classList.add('notpro');
+                
+                if(beer[m].getAttribute('data-second')==datafirst || datafirst == 'all') {
+                   
+                    beer[m].classList.remove('notpro')
+                beer[m].classList.add('pro');
+           
+
+                }
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
